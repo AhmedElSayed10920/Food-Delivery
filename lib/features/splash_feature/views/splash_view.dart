@@ -1,4 +1,5 @@
 import 'package:deliveryapp/core/app_assets/app_images.dart';
+import 'package:deliveryapp/core/app_assets/app_size.dart';
 import 'package:deliveryapp/features/splash_feature/controller/splash_view_controller_imp.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -15,8 +16,8 @@ class SplashView extends StatelessWidget {
             body: Center(
                 child: Image.asset(
               AppAssetImages.logo,
-              width: 200,
-              height: 200,
+              width: AppSize.s200,
+              height: AppSize.s200,
             )),
           );
         });
