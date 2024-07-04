@@ -1,3 +1,4 @@
+import 'package:deliveryapp/core/app_assets/constants.dart';
 import 'package:deliveryapp/core/app_routes/app_routes.dart';
 import 'package:deliveryapp/features/onboarding_feature/controller/onboarding_controller.dart';
 import 'package:deliveryapp/features/onboarding_feature/model/onboarding_view_model.dart';
@@ -14,8 +15,7 @@ class OnboardingControllerImp extends OnboardingController {
       return Get.offAllNamed(AppRoutes.login);
     } else {
       pageController.animateToPage(currentIndex,
-          duration: const Duration(microseconds: 500),
-          curve: Curves.bounceInOut);
+          duration: AppConstants.ms500, curve: Curves.easeInOut);
     }
   }
 
@@ -27,13 +27,9 @@ class OnboardingControllerImp extends OnboardingController {
 
   @override
   void onInit() {
-    super.onInit();
     pageController = PageController();
+    super.onInit();
   }
 
-  @override
-  void dispose() {
-    pageController.dispose();
-    super.dispose();
-  }
+ 
 }

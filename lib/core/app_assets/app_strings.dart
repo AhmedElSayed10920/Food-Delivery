@@ -1,6 +1,6 @@
 class AppStrings {
-//Font Family
-  static const String fontFamily = "Montsreeat";
+
+  
 //Onboarging View Strings
   static const String onBoardingTitleOne = "Fresh Food";
   static const String onBoardingTitleTwo = "Fast Delivery";
@@ -14,4 +14,6 @@ class AppStrings {
       "We make food ordering fast,\n simle and free - no matter if you\n order online or cash.";
   static const String onBoardingContinueText = "Continue";
   static const String onBoardingSkipText = "Skip";
+  static const String onBoardingNextText = "Next";
+  static const String emptyString = "";
 }

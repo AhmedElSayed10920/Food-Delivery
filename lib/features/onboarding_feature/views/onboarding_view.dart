@@ -1,3 +1,4 @@
+import 'package:deliveryapp/core/app_assets/app_size.dart';
 import 'package:deliveryapp/features/onboarding_feature/controller/on_boarding_controller_imp.dart';
 import 'package:deliveryapp/features/onboarding_feature/views/widgets/custom_button.dart';
 import 'package:deliveryapp/features/onboarding_feature/views/widgets/custom_skip_button.dart';
@@ -15,26 +16,26 @@ class OnBoardingView extends StatelessWidget {
     return const Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.all(20),
+          padding: EdgeInsets.all(AppSize.s20),
           child: Column(
             children: [
               SizedBox(
-                height: 10,
+                height: AppSize.s10,
               ),
               CustomSkipButton(),
               SizedBox(
-                height: 30,
+                height: AppSize.s30,
               ),
               Expanded(
                 child: PageViewBody(),
               ),
               PageIndicator(),
               SizedBox(
-                height: 30,
+                height: AppSize.s30,
               ),
               CustomMaterialButton(),
               SizedBox(
-                height: 80,
+                height: AppSize.s80,
               )
             ],
           ),

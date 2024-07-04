@@ -1,4 +1,6 @@
 import 'package:deliveryapp/core/app_assets/app_colors.dart';
+import 'package:deliveryapp/core/app_assets/app_size.dart';
+import 'package:deliveryapp/core/app_assets/constants.dart';
 import 'package:deliveryapp/features/onboarding_feature/controller/on_boarding_controller_imp.dart';
 import 'package:deliveryapp/features/onboarding_feature/model/onboarding_view_model.dart';
 import 'package:flutter/material.dart';
@@ -17,14 +19,15 @@ class PageIndicator extends StatelessWidget {
         children: [
           ...List.generate(onBoardingData.length, (index) {
             return Padding(
-              padding: const EdgeInsets.all(5),
+              padding: const EdgeInsets.all(AppSize.s5),
               child: AnimatedContainer(
-                duration: const Duration(milliseconds: 900),
-                height: 6,
-                width: controller.currentIndex == index ? 20 : 6,
+                duration: AppConstants.ms500,
+                height: AppSize.s6,
+                width:
+                    controller.currentIndex == index ? AppSize.s20 : AppSize.s6,
                 decoration: BoxDecoration(
                     color: AppColors.primaryColor,
-                    borderRadius: BorderRadius.circular(12)),
+                    borderRadius: BorderRadius.circular(AppSize.s12)),
               ),
             );
           }),
