@@ -1,6 +1,6 @@
 import 'package:deliveryapp/core/app_assets/app_theme.dart';
 import 'package:deliveryapp/core/app_routes/routes.dart';
-import 'package:deliveryapp/features/onboarding_feature/views/onboarding_view.dart';
+import 'package:deliveryapp/features/splash_feature/views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -16,7 +16,7 @@ class FoodDeliveryApp extends StatelessWidget {
     return GetMaterialApp(
       theme: getThemeData(),
       debugShowCheckedModeBanner: false,
-      home: const OnBoardingView(),
+      home: const SplashView(),
       routes: routes,
     );
   }
