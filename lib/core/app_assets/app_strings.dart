@@ -11,7 +11,7 @@ class AppStrings {
   static String onBoardingCaptionThree = "onBoardingCaptionThree".tr;
   static String onBoardingContinueText = "continueButton".tr;
   static String onBoardingSkipText = "skipButton".tr;
-  static String onBoardingNextText = "nextButton".tr;
+  static String next = "nextButton".tr;
   //Login View Strings
   static String emailHintText = "EmailHintText".tr;
   static String passHintText = "PassHintText".tr;
@@ -26,6 +26,14 @@ class AppStrings {
   static String phoneHint = "phoneHint".tr;
   static String phoneLabel = "phoneLabel".tr;
   static String alreadyHaveAccount = "alreadyHaveAccount".tr;
+  static String findAccount = "findAccount".tr;
+  static String verifyCode = "verifyCode".tr;
+  static String success = "success".tr;
+  static String resetPassword = "resetPassword".tr;
+  static String newPassword = "newPassword".tr;
+  static String enterNewPassword = "enterNewPassword".tr;
+  static String reEnterNewPassword = "reEnterNewPassword".tr;
+  static String confirm = "confirm".tr;
 
   
    

@@ -43,7 +43,7 @@ class OnBoardingView extends StatelessWidget {
                   buttonLabel:
                       controller.currentIndex == onBoardingData.length - 1
                           ? AppStrings.onBoardingContinueText
-                          : AppStrings.onBoardingNextText,
+                          : AppStrings.next,
                 );
               }),
               const SizedBox(

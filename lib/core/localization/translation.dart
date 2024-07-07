@@ -29,7 +29,15 @@ class AppTranslation extends Translations {
           "userNameLabel": "اسم المستخدم",
           "phoneHint": "أدخل رقم الهاتف",
           "phoneLabel": "رقم الهاتف",
-          "alreadyHaveAccount":"لديك حساب بالفعل؟"
+          "alreadyHaveAccount":"لديك حساب بالفعل؟",
+          "findAccount":"استرجاع الحساب",
+          "verifyCode":"تحقق من الرمز",
+          "success":"تمت العملية بنجاح",
+          "newPassword":"الرقم السرى الجديد",
+          "reEnterNewPassword":"إعادة إدخال كلمة السر الجديدة ",
+          "enterNewPassword":"أدخل كلمة السر الجديدة",
+          "resetPassword":"إعادة تعيين كلمة السر",
+          "confirm":"تأكيد"
         },
         "en": {
           "onBoardingTitleOne": "Fresh Food",
@@ -57,7 +65,15 @@ class AppTranslation extends Translations {
           "userNameLabel": "Username",
           "phoneHint": "Enter your Phone Number...",
           "phoneLabel": "Phone",
-          "alreadyHaveAccount":"Already have an account?"
+          "alreadyHaveAccount":"Already have an account?",
+          "findAccount":"Find you Account",
+          "verifyCode":"Verify Code",
+          "success":"Success",
+          "newPassword":"New Password",
+          "reEnterNewPassword":"Re-Enter New Password",
+          "enterNewPassword":"Enter New Password",
+          "resetPassword":"Reset Password",
+          "confirm":"Confirm"
         },
       };
 }
