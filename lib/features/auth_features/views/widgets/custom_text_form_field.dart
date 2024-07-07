@@ -19,12 +19,7 @@ class CustomTextFormField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       cursorColor: AppColors.primaryColor,
-      style: TextStyle(
-        
-      ),
-
       decoration: InputDecoration(
-        
         contentPadding: const EdgeInsets.symmetric(
           horizontal: AppSize.s20,
           vertical: AppSize.s16,
@@ -46,7 +41,6 @@ class CustomTextFormField extends StatelessWidget {
         prefixIcon: Icon(icon, color: AppColors.primaryColor),
         focusColor: AppColors.primaryColor,
         alignLabelWithHint: true,
-        
       ),
       obscureText: obscureText,
     );
