@@ -1,6 +1,6 @@
 import 'package:deliveryapp/core/app_assets/app_images.dart';
 import 'package:deliveryapp/core/app_assets/app_strings.dart';
-import 'package:deliveryapp/features/onboarding_feature/model/onboarding_model.dart';
+import 'package:deliveryapp/features/onboarding_feature/data/onboarding_data_model.dart';
 
 List<OnboardingModel> onBoardingData = [
   OnboardingModel(

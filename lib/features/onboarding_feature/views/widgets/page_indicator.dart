@@ -2,7 +2,7 @@ import 'package:deliveryapp/core/app_assets/app_colors.dart';
 import 'package:deliveryapp/core/app_assets/app_size.dart';
 import 'package:deliveryapp/core/app_assets/constants.dart';
 import 'package:deliveryapp/features/onboarding_feature/controller/on_boarding_controller_imp.dart';
-import 'package:deliveryapp/features/onboarding_feature/model/onboarding_view_model.dart';
+import 'package:deliveryapp/features/onboarding_feature/data/onboarding_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

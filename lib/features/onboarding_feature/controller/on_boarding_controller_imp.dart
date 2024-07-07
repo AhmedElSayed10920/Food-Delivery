@@ -1,7 +1,7 @@
 import 'package:deliveryapp/core/app_assets/constants.dart';
 import 'package:deliveryapp/core/app_routes/app_routes.dart';
 import 'package:deliveryapp/features/onboarding_feature/controller/onboarding_controller.dart';
-import 'package:deliveryapp/features/onboarding_feature/model/onboarding_view_model.dart';
+import 'package:deliveryapp/features/onboarding_feature/data/onboarding_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

@@ -8,7 +8,7 @@ class AppTranslation extends Translations {
           "onBoardingTitleTwo": "توصيل سريع",
           "onBoardingTitleThree": "سهولة الدفع",
           "onBoardingCaptionOne":
-              ".نحن نجعل من السهل العثور على الطعام الذي تتوق إليه. أدخل عنوانك ودعنا نقوم بالباقي",
+              "نحن نجعل من السهل العثور على الطعام الذي تتوق إليه. أدخل عنوانك ودعنا نقوم بالباقي.",
           "onBoardingCaptionTwo":
               "عندما تطلب منيوز ، سنقوم بتوصيلك بكوبونات حصرية وعروض خاصة ومكافآت.",
           "onBoardingCaptionThree":
@@ -16,6 +16,20 @@ class AppTranslation extends Translations {
           "skipButton": "تخطي",
           "continueButton": "استمر",
           "nextButton": "التالي",
+          //login Strings
+          "EmailHintText": "أدخل البريد الإلكتروني",
+          "PassHintText": "أدخل كلمة السر",
+          "EmailLabelText": "البريد الإلكتروني",
+          "PassLabelText": "كلمة السر",
+          "login":"تسجيل الدخول",
+          "don'tHaveAccount":" ليس لديك حساب؟",
+          "signUp":" إنشاء حساب",
+          "forgetPassword":"هل نسيت كلمة السر؟",
+          "userNameHint": "أدخل اسم المستخدم",
+          "userNameLabel": "اسم المستخدم",
+          "phoneHint": "أدخل رقم الهاتف",
+          "phoneLabel": "رقم الهاتف",
+          "alreadyHaveAccount":"لديك حساب بالفعل؟"
         },
         "en": {
           "onBoardingTitleOne": "Fresh Food",
@@ -30,6 +44,20 @@ class AppTranslation extends Translations {
           "skipButton": "Skip",
           "continueButton": "Continue",
           "nextButton": "Next",
+          //login Strings
+          "EmailHintText": "Enter your Email...",
+          "PassHintText": "Enter your Password...",
+          "EmailLabelText": "Email",
+          "PassLabelText": "Password",
+          "login":"Login",
+          "don'tHaveAccount":" Don't have an account?",
+          "signUp":" Sign Up",
+          "forgetPassword":"Forget Password?",
+          "userNameHint": "Enter your username...",
+          "userNameLabel": "Username",
+          "phoneHint": "Enter your Phone Number...",
+          "phoneLabel": "Phone",
+          "alreadyHaveAccount":"Already have an account?"
         },
       };
 }

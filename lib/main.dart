@@ -7,7 +7,7 @@ import 'package:deliveryapp/features/splash_feature/views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initialServices();
   runApp(const FoodDeliveryApp());
@@ -22,10 +22,10 @@ class FoodDeliveryApp extends StatelessWidget {
     return GetMaterialApp(
       theme: getThemeData(),
       translations: AppTranslation(),
-      locale:controller.language ,
+      locale: controller.language,
       debugShowCheckedModeBanner: false,
       home: const SplashView(),
-      routes: routes,
+      getPages: routes,
     );
   }
 }

@@ -5,24 +5,28 @@ import 'package:flutter/material.dart';
 
 ThemeData getThemeData() {
   return ThemeData(
-    fontFamily: AppfontFamily.fontFamily,
+      fontFamily: AppfontFamily.fontFamily,
       scaffoldBackgroundColor: AppColors.white,
       primaryColor: AppColors.primaryColor,
       textTheme: TextTheme(
-          displayLarge: getTextStyleBold(
-            FontSize.s35,
-            AppColors.black,
-          ),
-          displayMedium: getTextStyleMedium(
-            FontSize.s18,
-            AppColors.black.withOpacity(.4),
-          ),
-          labelSmall: getTextStyleRegular(
-            FontSize.s18,
-            AppColors.black,
-          ),
-          labelLarge: getTextStyleSemiBold(
-            FontSize.s20,
-            AppColors.white,
-          )));
+        displayLarge: getTextStyleBold(
+          FontSize.s35,
+          AppColors.black,
+        ),
+        displayMedium: getTextStyleMedium(
+          FontSize.s18,
+          AppColors.black.withOpacity(.4),
+        ),
+        labelSmall: getTextStyleRegular(
+          FontSize.s18,
+          AppColors.black,
+        ),
+        labelLarge: getTextStyleSemiBold(
+          FontSize.s20,
+          AppColors.white,
+        ),
+      ),
+      inputDecorationTheme: const InputDecorationTheme(
+        floatingLabelStyle: TextStyle(color: AppColors.primaryColor),
+      ));
 }
