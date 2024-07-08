@@ -36,8 +36,8 @@ class LoginAuthViewBody extends StatelessWidget {
             height: AppSize.s40,
           ),
           CustomTextFormField(
-            validator: (val){
-             return inputValidate(val!, 12, 100, "email");
+            validator: (val) {
+              return inputValidate(val!, 12, 100, "email");
             },
             controller: controller.email,
             hintText: AppStrings.emailHintText,
@@ -47,16 +47,25 @@ class LoginAuthViewBody extends StatelessWidget {
           const SizedBox(
             height: AppSize.s20,
           ),
-          CustomTextFormField(
-            validator: (val){
-             return inputValidate(val!, 8, 50, "password");
-            },
-            controller: controller.password,
-            hintText: AppStrings.passHintText,
-            obscureText: true,
-            labelText: AppStrings.passLabelText,
-            icon: Icons.lock_outline,
-          ),
+          GetBuilder<LoginControllerImp>(builder: (controller) {
+            return CustomTextFormField(
+              validator: (val) {
+                return inputValidate(val!, 8, 50, "password");
+              },
+              suffixIcon: IconButton(
+                  onPressed: () {
+                    controller.showPassword();
+                  },
+                  icon: controller.obsecureText
+                      ? const Icon(Icons.visibility)
+                      : const Icon(Icons.visibility_off)),
+              controller: controller.password,
+              hintText: AppStrings.passHintText,
+              obscureText: controller.obsecureText,
+              labelText: AppStrings.passLabelText,
+              icon: Icons.lock_outline,
+            );
+          }),
           ForgetPasswordInkWell(
             inkLabel: AppStrings.forgetPassword,
             onTap: () {

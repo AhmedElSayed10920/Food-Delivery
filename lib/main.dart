@@ -1,4 +1,3 @@
-import 'package:deliveryapp/core/app_assets/app_theme.dart';
 import 'package:deliveryapp/core/app_routes/routes.dart';
 import 'package:deliveryapp/core/localization/change_local_controller.dart';
 import 'package:deliveryapp/core/localization/translation.dart';
@@ -20,7 +19,7 @@ class FoodDeliveryApp extends StatelessWidget {
   Widget build(BuildContext context) {
     ChangeLocale controller = Get.put(ChangeLocale());
     return GetMaterialApp(
-      theme: getThemeData(),
+      theme: controller.appTheme,
       translations: AppTranslation(),
       locale: controller.language,
       debugShowCheckedModeBanner: false,

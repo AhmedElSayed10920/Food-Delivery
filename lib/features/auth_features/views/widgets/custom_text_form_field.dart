@@ -10,7 +10,8 @@ class CustomTextFormField extends StatelessWidget {
     required this.labelText,
     required this.icon,
     this.validator,
-    this.controller,
+    this.controller, this.suffixIcon,
+
   });
   final String hintText;
   final String labelText;
@@ -18,6 +19,7 @@ class CustomTextFormField extends StatelessWidget {
   final IconData icon;
   final String? Function(String?)? validator;
   final TextEditingController? controller;
+  final Widget? suffixIcon;
 
   @override
   Widget build(BuildContext context) {
@@ -46,9 +48,10 @@ class CustomTextFormField extends StatelessWidget {
         hintStyle: const TextStyle(fontSize: AppSize.s16),
         prefixIcon: Icon(icon, color: AppColors.primaryColor),
         focusColor: AppColors.primaryColor,
+        suffixIcon: suffixIcon,
         alignLabelWithHint: true,
       ),
-      obscureText: obscureText,
+      obscureText: obscureText ,
     );
   }
 }

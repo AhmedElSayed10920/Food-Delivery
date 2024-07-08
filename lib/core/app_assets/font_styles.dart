@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AppfontFamily {
-  static const String fontFamily = "Montserrat";
+  static const String fontFamilyEn = "Montserrat";
+  static const String fontFamilyAr = "Cairo";
 }
 
 class AppFontWeight {
@@ -13,6 +14,9 @@ class AppFontWeight {
 }
 
 class FontSize {
+    static const double s12= 12;
+
+  static const double s16 = 16;
   static const double s18 = 18;
   static const double s20 = 20;
   static const double s35 = 35;
